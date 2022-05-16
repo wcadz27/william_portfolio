@@ -1,0 +1,109 @@
+.app__about {
+  width: 100%;
+  order: 3;
+  h1 {
+    font-size: 4em;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__about-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.app__about-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 1300px) {
+    flex-direction: row;
+  }
+}
+
+.app__about-description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 1300px) {
+  }
+}
+
+.app__about-description-text {
+  width: 50vw;
+  margin-top: 4rem;
+  p {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  @media screen and (min-width: 1300px) {
+    width: 40vw;
+  }
+}
+
+.app__about-icon {
+  margin-top: 4rem;
+  @media screen and (min-width: 1300px) {
+  }
+}
+
+.about-icon {
+  font-size: 35vmin;
+  margin-top: 5rem;
+  @media screen and (min-width: 1300px) {
+    margin-top: 1rem;
+  }
+}
+
+.app__about-skills-container {
+  flex: 1;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__about-skills-list {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 1300px) {
+    flex-direction: row;
+    width: 70%;
+  }
+}
+
+.app__about-skills-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem;
+
+  div {
+    border-radius: 50%;
+    border: 3px solid black;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*     &:hover {
+    } */
+  }
+
+  p {
+    font-weight: 500;
+    margin-top: 0.75rem;
+  }
+}

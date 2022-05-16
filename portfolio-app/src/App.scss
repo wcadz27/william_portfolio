@@ -1,14 +1,25 @@
 .particle-bg {
-  position: absolute;
+  /* position: absolute; */
   z-index: -1;
   width: 100%;
   display: flex;
 }
 
+.header-highlight {
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  transition: background-size 0.5s;
+  background-image: linear-gradient(to top, #4ca1af 15%, transparent 0);
+}
+
 .page-sections {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+}
+
+.page-sections > div {
+  z-index: 1;
 }
 
 .app {

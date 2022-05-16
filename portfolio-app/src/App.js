@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Header, About, Work, Skills, Contact, Footer } from "./container";
+import { Header, About, Work, Contact, Footer } from "./container";
 import { Navbar } from "./components";
 import "./App.scss";
 import ParticleBackground from "./assets/ParticleJs/ParticleBackground";
@@ -14,11 +14,10 @@ const App = () => {
       <div className="page-sections">
         <Header />
         <Navbar />
-        {/*         <About />
-        <Skills />
+        <About />
         <Work />
         <Contact />
-        <Footer /> */}
+        <Footer />
       </div>
     </div>
   );
