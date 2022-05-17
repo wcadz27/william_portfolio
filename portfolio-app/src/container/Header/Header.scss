@@ -22,10 +22,14 @@
 .app__header-text-container {
   margin-top: 5em;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   flex: 1;
+  @media screen and (min-width: 700px) {
+    margin-top: 10em;
+  }
 }
 
 .app__header-name-info {
@@ -36,9 +40,18 @@
   display: flex;
 }
 
+.bold-name-tag {
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
 .header-text {
-  font-size: 8rem;
-  color: var(--gray-color);
+  font-size: 290%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: var(--black);
+  @media screen and (min-width: 700px) {
+    font-size: 375%;
+  }
 }
 
 .app__header-guide {
@@ -49,18 +62,25 @@
 }
 
 .guide-arrow {
-  font-size: 2rem;
+  font-size: 1rem;
   transition: 0.5s;
-
-  &:hover {
-    color: black;
+  fill: var(--black);
+  &:hover,
+  &:focus {
+    fill: var(--primary-color);
   }
 }
 
 .arrow-container {
-  &:hover {
-    background-color: var(--secondary-color);
-    border: 1px solid black;
+  border: none;
+  background: none;
+  transition: 0.35s;
+  border-radius: 70%;
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 0 0 6em var(--secondary-color);
+  }
+  @media screen and (min-width: 700px) {
     border-radius: 50%;
   }
 }

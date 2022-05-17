@@ -62,7 +62,7 @@ const About = () => {
       <div className="app__about-info-container">
         <motion.div className="app__about-description">
           <div className="app__about-icon app__flex">
-            <MaleIcon className="about-icon" />
+            <MaleIcon />
           </div>
           <div className="app__about-description-text">
             <p className="p-text">

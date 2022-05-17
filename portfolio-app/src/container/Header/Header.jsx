@@ -38,9 +38,9 @@ const Header = () => {
         transition={{ duration: 0.5, delay: 1.5 }}
         className="app__header-guide"
       >
-        <div className="arrow-container">
+        <button className="arrow-container">
           <DownArrow />
-        </div>
+        </button>
       </motion.div>
     </div>
   );
