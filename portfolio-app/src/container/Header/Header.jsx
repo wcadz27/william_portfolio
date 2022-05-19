@@ -10,7 +10,7 @@ const Header = () => {
       <div className="app__header-text-container">
         <motion.div
           whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-          transition={{ duration: 1.3 }}
+          transition={{ duration: 1.5 }}
           className="app__header-name-info"
         >
           <div className="app__header-name">

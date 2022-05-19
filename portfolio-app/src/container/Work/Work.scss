@@ -1,0 +1,13 @@
+.app__work {
+  width: 100%;
+  order: 4;
+  justify-content: center;
+  h1 {
+    font-size: 1.85em;
+  }
+  @media screen and (min-width: 700px) {
+    font-size: 2em;
+  }
+  height: 50vh;
+  background-color: white;
+}
