@@ -42,22 +42,32 @@ const iconNames = [
   "Sass",
 ];
 
-const IconsList = icons.map((Icon, index) => {
+const random = (min, max) => Math.random() * (max - min) + min;
+
+const IconsList = icons.map((Icon, i) => {
   return (
     <div className="app__about-skills-item">
-      <div key={index}>
+      <motion.div
+        key={i}
+        whileInView={{ x: 0, opacity: [0, 1] }}
+        transition={{ duration: random(2, 3) }}
+      >
         <Icon />
-      </div>
-      <p className="app__about-skill-name p-text">{iconNames[index]}</p>
+      </motion.div>
+      <p className="app__about-skill-name p-text">{iconNames[i]}</p>
     </div>
   );
 });
 
 const About = () => {
   return (
-    <div className="app__about app__flex">
-      <motion.div>
-        <h1 className="app__about-heading app__flex header-highlight">About</h1>
+    <div className="app__about">
+      <motion.div
+        whileInView={{ y: [50, 100], opacity: [0, 1] }}
+        transition={{ duration: 0.5 }}
+        className="app__about-heading-container"
+      >
+        <h1 className="app__about-heading header-highlight">About</h1>
       </motion.div>
       <div className="app__about-info-container">
         <motion.div className="app__about-description">
@@ -77,9 +87,9 @@ const About = () => {
             </p>
           </div>
         </motion.div>
-        <motion.div className="app__about-skills-container">
+        <div className="app__about-skills-container">
           <div className="app__about-skills-list app__flex">{IconsList}</div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

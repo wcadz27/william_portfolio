@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { AiOutlineArrowDown } from "react-icons/ai";
 import { DownArrow } from "../../assets/icons/Icons";
 
 import "./Header.scss";
@@ -9,8 +8,8 @@ const Header = () => {
     <div className="app__header app__flex">
       <div className="app__header-text-container">
         <motion.div
-          whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-          transition={{ duration: 1.5 }}
+          whileInView={{ x: [-25, 0], opacity: [0, 1] }}
+          transition={{ duration: 1 }}
           className="app__header-name-info"
         >
           <div className="app__header-name">
@@ -22,8 +21,8 @@ const Header = () => {
           </div>
         </motion.div>
         <motion.div
-          whileInView={{ x: [100, 0], opacity: [0, 1] }}
-          transition={{ duration: 1.3 }}
+          whileInView={{ x: [25, 0], opacity: [0, 1] }}
+          transition={{ duration: 1 }}
           className="app__header-info-dev"
         >
           <div className="app__header-dev">
@@ -34,8 +33,8 @@ const Header = () => {
         </motion.div>
       </div>
       <motion.div
-        whileInView={{ y: [20, 0], opacity: [0, 1] }}
-        transition={{ duration: 0.5, delay: 1.5 }}
+        whileInView={{ y: [100, 0], opacity: [0, 1] }}
+        transition={{ duration: 4 }}
         className="app__header-guide"
       >
         <button className="arrow-container">

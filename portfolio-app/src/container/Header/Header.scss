@@ -10,6 +10,7 @@
 .app__header {
   z-index: 1;
   height: 100vh;
+  width: 100%;
   /*   top: 50%;
   left: 50%;
   margin-right: -50%;
@@ -46,7 +47,7 @@
 }
 
 .header-text {
-  font-size: 4rem;
+  font-size: 1.25em;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: var(--black);
   @media screen and (min-width: 700px) {
@@ -68,7 +69,7 @@
 }
 
 .guide-arrow {
-  font-size: 1.75rem;
+  font-size: 0.65em;
   transition: 0.5s;
   fill: var(--black);
   &:hover,

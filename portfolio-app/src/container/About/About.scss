@@ -1,31 +1,32 @@
 .app__about {
-  width: 100%;
+  width: 50%;
   order: 3;
   justify-content: center;
-  h1 {
-    font-size: 1.85em;
-  }
+  flex-direction: column;
   @media screen and (min-width: 700px) {
     font-size: 2em;
   }
 }
 
-.app__about-heading {
+.app__about-heading-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 4rem;
+  margin-bottom: 5em;
+  margin-top: -3em;
+  h1 {
+  }
 }
 
 .app__about-info-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
   @media screen and (min-width: 1300px) {
     flex-direction: row;
     margin-bottom: 5em;
+    margin-top: 3em;
   }
 }
 
@@ -35,15 +36,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media screen and (min-width: 1300px) {
-  }
 }
 
 .app__about-description-text {
-  width: 70vw;
-  margin-top: 4rem;
+  margin-top: 2rem;
   p {
-    font-size: 1.5rem;
+    font-size: 0.5em;
+    /* font-size: 1.5rem; */
     text-align: center;
     @media screen and (min-width: 700px) {
       font-size: 1.75rem;
@@ -69,8 +68,10 @@
 
 .about-icon {
   margin-top: 1rem;
-  width: 50%;
-  height: 50%;
+  /*  width: 50%;
+  height: 50%; */
+  width: 35%;
+  height: 35%;
   @media screen and (min-width: 700px) {
     width: 85%;
     height: 85%;
@@ -117,18 +118,31 @@
   margin: 1rem;
 
   div {
+    background-color: var(--white-color);
     border-radius: 50%;
-    border: 3px solid black;
-    width: 100px;
-    height: 100px;
+    /*     width: 100px;
+    height: 100px; */
+    width: 25px;
+    height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     /*     &:hover {
     } */
+
+    &:hover {
+      box-shadow: 0 0 25px var(--secondary-color);
+    }
+
     @media screen and (min-width: 700px) {
       width: 85px;
       height: 85px;
+      flex-direction: row;
+    }
+
+    @media screen and (min-width: 1300px) {
+      width: 120px;
+      height: 120px;
       flex-direction: row;
     }
     @media screen and (min-width: 1700px) {

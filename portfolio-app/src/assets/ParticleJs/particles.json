@@ -17,46 +17,7 @@
   "fullScreen": {
     "zIndex": 1
   },
-  "interactivity": {
-    "events": {
-      "onClick": {
-        "mode": "repulse"
-      },
-      "onHover": {
-        "enable": true,
-        "mode": "bubble"
-      }
-    },
-    "modes": {
-      "bubble": {
-        "distance": 250,
-        "duration": 2,
-        "opacity": 0,
-        "size": 0,
-        "divs": {
-          "distance": 200,
-          "duration": 0.4,
-          "mix": false,
-          "selectors": []
-        }
-      },
-      "grab": {
-        "distance": 400
-      },
-      "repulse": {
-        "distance": 400,
-        "divs": {
-          "distance": 200,
-          "duration": 0.4,
-          "factor": 100,
-          "speed": 1,
-          "maxSpeed": 50,
-          "easing": "ease-out-quad",
-          "selectors": []
-        }
-      }
-    }
-  },
+
   "particles": {
     "color": {
       "value": "#030303"
@@ -94,7 +55,7 @@
       "density": {
         "enable": true
       },
-      "value": 160
+      "value": 20
     },
     "opacity": {
       "random": {

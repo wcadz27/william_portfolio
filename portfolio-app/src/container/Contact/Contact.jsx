@@ -33,7 +33,11 @@ const Contact = () => {
   return (
     <div className="app__contact-container app__flex">
       <div className="app__flex app__contact">
-        <motion.div className="app__flex app__contact-header">
+        <motion.div
+          whileInView={{ y: [100, 0], opacity: [0, 1] }}
+          transition={{ duration: 4 }}
+          className="app__flex app__contact-header"
+        >
           <h1 className="app__contact-heading header-highlight">Contact</h1>
           <p className="p-text">
             Want to have a conversation or work together? Leave your details and
