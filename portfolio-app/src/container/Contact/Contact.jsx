@@ -35,7 +35,7 @@ const Contact = () => {
       <div className="app__flex app__contact">
         <motion.div
           whileInView={{ y: [100, 0], opacity: [0, 1] }}
-          transition={{ duration: 4 }}
+          transition={{ duration: 0.5 }}
           className="app__flex app__contact-header"
         >
           <h1 className="app__contact-heading header-highlight">Contact</h1>

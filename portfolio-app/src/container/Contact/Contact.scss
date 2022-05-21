@@ -1,14 +1,14 @@
 .app__contact-container {
-  width: 50%;
+  width: 100%;
   order: 5;
   flex-direction: column;
 }
 
 .app__contact {
   flex-direction: column;
-  margin-top: 1.5em;
+  margin-top: 4em;
   h1 {
-    font-size: 1.85em;
+    font-size: 1.5em;
   }
   @media screen and (min-width: 700px) {
     font-size: 2em;
@@ -47,8 +47,20 @@
     margin-top: 2.5em;
     font-size: 1em;
     text-align: center;
-    background-color: var(--black-color);
-    color: var(--primary-color);
+    background-color: transparent;
+    color: var(--secondary-color);
+    cursor: pointer;
+    width: 5em;
+    border: none;
+    border-left: solid 1px var(--secondary-color);
+    outline: none;
+    transition: ease-out 0.3s;
+    box-shadow: inset 0 0 0 0 var(--secondary-color);
+
+    &:hover {
+      box-shadow: inset 5em 0 0 0 var(--secondary-color);
+      color: white;
+    }
   }
 
   .sender-message,
@@ -69,40 +81,4 @@
 
 form {
   width: 100%;
-}
-
-.btn-2 {
-  letter-spacing: 0;
-}
-
-.btn-2:hover,
-.btn-2:active {
-  letter-spacing: 5px;
-}
-
-.btn-2:after,
-.btn-2:before {
-  backface-visibility: hidden;
-  border: 1px solid rgba(#fff, 0);
-  bottom: 0px;
-  content: " ";
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  transition: all 280ms ease-in-out;
-  width: 0;
-}
-
-.btn-2:hover:after,
-.btn-2:hover:before {
-  backface-visibility: hidden;
-  border-color: #fff;
-  transition: width 350ms ease-in-out;
-  width: 70%;
-}
-
-.btn-2:hover:before {
-  bottom: auto;
-  top: 0;
-  width: 70%;
 }
