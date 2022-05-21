@@ -35,7 +35,7 @@ const iconNames = [
   "ExpressJS",
   "Git",
   "Html",
-  "Js",
+  "Javascript",
   "MongoDB",
   "NextJS",
   "NodeJS",

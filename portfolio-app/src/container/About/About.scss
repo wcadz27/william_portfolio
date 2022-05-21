@@ -6,6 +6,7 @@
   @media screen and (min-width: 700px) {
     font-size: 2em;
   }
+  z-index: 1;
 }
 
 .app__about-heading-container {
@@ -101,7 +102,7 @@
 }
 
 .app__about-skills-list {
-  width: 80%;
+  width: 88%;
   display: flex;
   flex-wrap: wrap;
 
