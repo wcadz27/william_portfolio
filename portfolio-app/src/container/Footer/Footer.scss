@@ -1,0 +1,38 @@
+.app__footer-container {
+  order: 6;
+  z-index: 1;
+  width: 100%;
+  height: 105px;
+  background: rgba(220, 218, 218, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.app__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  p {
+    font-size: 0.95em;
+  }
+}
+
+.icon-container {
+}
+
+.footer-icon-link {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-icon,
+.footer-icon-middle {
+  font-size: 2em;
+}
+
+.footer-icon-middle {
+  margin: 0 0.25em;
+}

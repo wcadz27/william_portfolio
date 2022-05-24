@@ -51,6 +51,7 @@ const IconsList = icons.map((Icon, i) => {
         key={i}
         whileInView={{ x: 0, opacity: [0, 1] }}
         transition={{ duration: random(2, 3) }}
+        viewport={{ once: true }}
       >
         <Icon />
       </motion.div>
@@ -61,10 +62,11 @@ const IconsList = icons.map((Icon, i) => {
 
 const About = () => {
   return (
-    <div className="app__about">
+    <div className="app__about" id="about">
       <motion.div
         whileInView={{ y: [50, 100], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
         className="app__about-heading-container"
       >
         <h1 className="app__about-heading header-highlight">About</h1>

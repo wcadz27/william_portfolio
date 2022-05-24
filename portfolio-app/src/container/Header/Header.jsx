@@ -5,12 +5,13 @@ import { DownArrow } from "../../assets/icons/Icons";
 import "./Header.scss";
 const Header = () => {
   return (
-    <div className="app__header app__flex">
+    <div className="app__header app__flex" id="home">
       <div className="app__header-text-container">
         <motion.div
           whileInView={{ x: [-25, 0], opacity: [0, 1] }}
           transition={{ duration: 1 }}
           className="app__header-name-info"
+          viewport={{ once: true }}
         >
           <div className="app__header-name">
             <div className="name-tag app_flex">
@@ -24,6 +25,7 @@ const Header = () => {
           whileInView={{ x: [25, 0], opacity: [0, 1] }}
           transition={{ duration: 1 }}
           className="app__header-info-dev"
+          viewport={{ once: true }}
         >
           <div className="app__header-dev">
             <div className="dev-tag app__flex">
@@ -36,10 +38,11 @@ const Header = () => {
         whileInView={{ y: [100, 0], opacity: [0, 1] }}
         transition={{ duration: 4 }}
         className="app__header-guide"
+        viewport={{ once: true }}
       >
-        <button className="arrow-container">
+        <a href="#about" className="arrow-container">
           <DownArrow />
-        </button>
+        </a>
       </motion.div>
     </div>
   );

@@ -13,10 +13,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_itzmjqi",
+        "template_vw0rqka",
         form.current,
-        "YOUR_PUBLIC_KEY"
+        "EjeM7F-WQj_UN2pUB"
       )
       .then(
         (result) => {
@@ -31,12 +31,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="app__contact-container app__flex">
+    <div className="app__contact-container app__flex" id="contact">
       <div className="app__flex app__contact">
         <motion.div
           whileInView={{ y: [100, 0], opacity: [0, 1] }}
           transition={{ duration: 0.5 }}
           className="app__flex app__contact-header"
+          viewport={{ once: true }}
         >
           <h1 className="app__contact-heading header-highlight">Contact</h1>
           <p className="p-text">
@@ -45,20 +46,25 @@ const Contact = () => {
           </p>
         </motion.div>
         {!isFormSubmitted ? (
-          <motion.div className="app__contact-form-container app__flex">
-            <form className="app__flex" onSubmit={sendEmail}>
+          <motion.div
+            whileInView={{ y: [100, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="app__contact-form-container app__flex"
+          >
+            <form className="app__flex" onSubmit={sendEmail} ref={form}>
               <div className="input-container">
                 <input
                   className="p-text sender-name"
                   type="text"
                   placeholder="Name"
-                  name="senderName"
+                  name="sender-name"
                 />
                 <input
                   className="p-text sender-email"
                   type="text"
                   placeholder="Email"
-                  name="senderEmail"
+                  name="sender-email"
                 />
                 <input
                   className="p-text sender-message"
