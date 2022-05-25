@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { LogoName } from "../../assets/icons/Icons";
 
 import { images } from "../../constants";
 import "./Navbar.scss";
@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.logo} alt="logo" />
+        <LogoName />
       </div>
       <ul className="app__navbar-links">
         {["home", "about", "work", "contact"].map((tab) => (

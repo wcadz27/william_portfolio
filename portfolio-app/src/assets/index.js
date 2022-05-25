@@ -1,6 +1,7 @@
 export { default as ParticleBackground } from "./ParticleJs/ParticleBackground";
 export {
-  default as MaleIcon,
+  default as ExportLogo,
+  MaleIcon,
   NextJSLogo,
   GitLogo,
   NodeJSLogo,
