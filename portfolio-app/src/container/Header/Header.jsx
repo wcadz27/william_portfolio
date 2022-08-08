@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { DownArrow } from "../../assets/icons/Icons";
 
 import "./Header.scss";
-const Header = () => {
+const Header = ({ theme }) => {
   return (
     <div className="app__header app__flex" id="home">
       <div className="app__header-text-container">
@@ -15,7 +15,9 @@ const Header = () => {
         >
           <div className="app__header-name">
             <div className="name-tag app_flex">
-              <p className="header-text">
+              <p
+                className={`header-text ${theme === "dark" ? "dark-mode" : ""}`}
+              >
                 Hello, I'm <span className="bold-name-tag">William</span>
               </p>
             </div>
@@ -29,7 +31,11 @@ const Header = () => {
         >
           <div className="app__header-dev">
             <div className="dev-tag app__flex">
-              <p className="header-text">I'm a full stack web developer.</p>
+              <p
+                className={`header-text ${theme === "dark" ? "dark-mode" : ""}`}
+              >
+                I'm a full stack web developer.
+              </p>
             </div>
           </div>
         </motion.div>
@@ -40,7 +46,10 @@ const Header = () => {
         className="app__header-guide"
         viewport={{ once: true }}
       >
-        <a href="#about" className="arrow-container">
+        <a
+          href="#about"
+          className={`arrow-container ${theme === "dark" ? "dark-mode" : ""}`}
+        >
           <DownArrow />
         </a>
       </motion.div>

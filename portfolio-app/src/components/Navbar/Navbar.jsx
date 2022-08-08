@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { LogoName } from "../../assets/icons/Icons";
+import { BsToggleOff, BsToggleOn } from "react-icons/bs";
 
-import { images } from "../../constants";
 import "./Navbar.scss";
 
-const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
-
+const Navbar = ({ theme, setTheme }) => {
   return (
     <div className="app__navbar">
       <div className="app__navbar-logo">
@@ -16,10 +14,22 @@ const Navbar = () => {
         {["home", "about", "work", "contact"].map((tab) => (
           <li className="app__flex" key={`link-${tab}`}>
             <div />
-            <a href={`#${tab}`}>{tab}</a>
+            <a
+              className={`${theme === "dark" ? "dark-mode" : ""}`}
+              href={`#${tab}`}
+            >
+              {tab}
+            </a>
           </li>
         ))}
       </ul>
+      <div>
+        {theme === "light" ? (
+          <BsToggleOff onClick={() => setTheme("dark")} size="3em" />
+        ) : (
+          <BsToggleOn onClick={() => setTheme("light")} size="3em" />
+        )}
+      </div>
     </div>
   );
 };

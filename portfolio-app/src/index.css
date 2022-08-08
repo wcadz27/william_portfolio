@@ -11,11 +11,17 @@
   --gray-color: #6b7688;
   --brown-color: #46364a;
   --white-color: #ffffff;
+  --text-color: var(--black-color);
+  --text2-color: var(--gray-color);
+  --header-text-color: var(--black-color);
 }
 
 .dark-mode {
-  --primary-color: #1a1a1a;
-  --secondary-color: #4ca1af;
+  --header-text-color: #e7f6f2;
+  --text-color: #e4e4e4;
+  --text2-color: var(--text-color);
+  --primary-color: #2c3333;
+  --secondary-color: #a5c9ca;
   --nav-color: #272727;
   --nav-text-color: #e4e4e4;
 }

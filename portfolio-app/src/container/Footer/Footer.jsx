@@ -2,9 +2,13 @@ import React from "react";
 import { AiOutlineGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 
 import "./Footer.scss";
-const Footer = () => {
+const Footer = ({ theme }) => {
   return (
-    <div className="app__footer-container app__flex">
+    <div
+      className={`app__footer-container app__flex ${
+        theme === "dark" ? "dark-mode" : ""
+      }`}
+    >
       <div className="app__footer">
         <div className="icons-container">
           <a

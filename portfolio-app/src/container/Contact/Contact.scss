@@ -90,6 +90,10 @@
     border-top: none;
     background-color: transparent;
     outline: none;
+    border-color: var(--text2-color);
+    ::placeholder {
+      color: var(--text2-color);
+    }
   }
 
   .sender-message,

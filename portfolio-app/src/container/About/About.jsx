@@ -60,9 +60,12 @@ const IconsList = icons.map((Icon, i) => {
   );
 });
 
-const About = () => {
+const About = ({ theme }) => {
   return (
-    <div className="app__about" id="about">
+    <div
+      className={`app__about ${theme === "dark" ? "dark-mode" : ""}`}
+      id="about"
+    >
       <motion.div
         whileInView={{ y: [50, 100], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}

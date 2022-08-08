@@ -25,9 +25,12 @@ const Projects = {
   ],
 };
 
-const Work = () => {
+const Work = ({ theme }) => {
   return (
-    <div className="app__work app__flex" id="work">
+    <div
+      className={`app__work app__flex ${theme === "dark" ? "dark-mode" : ""}`}
+      id="work"
+    >
       <motion.div
         whileInView={{ y: [100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}

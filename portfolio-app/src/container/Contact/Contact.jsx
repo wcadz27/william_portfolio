@@ -3,7 +3,7 @@ import "./Contact.scss";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
-const Contact = () => {
+const Contact = ({ theme }) => {
   const form = useRef();
   const [loading, setLoading] = useState(false);
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
@@ -31,7 +31,12 @@ const Contact = () => {
   };
 
   return (
-    <div className="app__contact-container app__flex" id="contact">
+    <div
+      className={`app__contact-container app__flex ${
+        theme === "dark" ? "dark-mode" : ""
+      }`}
+      id="contact"
+    >
       <div className="app__flex app__contact">
         <motion.div
           whileInView={{ y: [100, 0], opacity: [0, 1] }}
