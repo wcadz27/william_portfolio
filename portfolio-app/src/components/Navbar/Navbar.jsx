@@ -22,14 +22,14 @@ const Navbar = ({ theme, setTheme }) => {
             </a>
           </li>
         ))}
+        <div>
+          {theme === "light" ? (
+            <BsToggleOff onClick={() => setTheme("dark")} size="3em" />
+          ) : (
+            <BsToggleOn onClick={() => setTheme("light")} size="3em" />
+          )}
+        </div>
       </ul>
-      <div>
-        {theme === "light" ? (
-          <BsToggleOff onClick={() => setTheme("dark")} size="3em" />
-        ) : (
-          <BsToggleOn onClick={() => setTheme("light")} size="3em" />
-        )}
-      </div>
     </div>
   );
 };

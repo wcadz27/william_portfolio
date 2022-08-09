@@ -34,12 +34,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 600px;
+  width: 90vw;
   height: 350px;
   background-color: white;
   border-radius: 5%;
   margin-top: 2em;
   transition: all 0.3s ease;
+
+  @media screen and (min-width: 650px) {
+    width: 600px;
+  }
 
   &:hover {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);

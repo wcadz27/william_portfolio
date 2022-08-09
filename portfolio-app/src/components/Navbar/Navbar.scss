@@ -1,6 +1,5 @@
 .app__navbar {
-  /*   order: 2; */
-  /* width: 100%; */
+  overflow-x: hidden;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -18,13 +17,15 @@
 }
 
 .app__navbar-logo {
-  overflow: hidden;
-  display: flex;
+  display: none;
   justify-content: flex-start;
   align-items: center;
   img {
     width: 120px;
     height: 20px;
+  }
+  @media screen and (min-width: 620px) {
+    display: flex;
   }
 }
 

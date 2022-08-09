@@ -7,18 +7,27 @@ import "./Work.scss";
 const Projects = {
   data: [
     {
-      name: "Sample1",
+      name: "MovieTime",
       className: "sample-one project-container",
       details: [
-        { links: [{ website: "hello.com" }, { github: "github.hello" }] },
-        { description: "this is my sample website" },
+        {
+          links: [
+            { website: "hello.com" },
+            { github: "github.hello" },
+            { imgURL: "https://imgur.com/gXWNWXS" },
+          ],
+        },
+        {
+          description:
+            "A full stack movie searching app built with React, Tailwind, and Firebase with CRUD functionality",
+        },
       ],
     },
     {
       name: "Sample2",
       className: "sample-two project-container",
       details: [
-        { links: [{ website: "hello" }, { github: "hello" }] },
+        { links: [{ website: "hello" }, { github: "hello" }, { imgURL: "" }] },
         { description: "this is another sample website" },
       ],
     },

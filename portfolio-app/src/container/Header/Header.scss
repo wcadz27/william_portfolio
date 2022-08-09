@@ -4,31 +4,27 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .app__header-text-container {
-  margin-top: 5em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  font-size: 1.7em;
+  position: absolute;
   text-align: center;
-  flex: 1;
+  @media screen and (min-width: 700px) {
+    font-size: 2.5em;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 3em;
+  }
   @media screen and (min-width: 1500px) {
-    margin-top: 12.5em;
+    font-size: 4em;
   }
   @media screen and (min-width: 1700px) {
-    margin-top: 17%;
+    font-size: 5em;
   }
-}
-
-.app__header-name-info {
-  display: flex;
-}
-
-.app__header-dev {
-  display: flex;
 }
 
 .bold-name-tag {
@@ -37,14 +33,11 @@
 }
 
 .header-text {
-  font-size: 1.45em;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: var(--text-color);
   @media screen and (min-width: 1008px) {
-    font-size: 2em;
   }
   @media screen and (min-width: 1500px) {
-    font-size: 2.7em;
   }
   /*   @media screen and (min-width: 1500px) {
     font-size: 6rem;
@@ -52,10 +45,9 @@
 }
 
 .app__header-guide {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2%;
 }
 
 .guide-arrow {

@@ -5,23 +5,17 @@ import { DownArrow } from "../../assets/icons/Icons";
 import "./Header.scss";
 const Header = ({ theme }) => {
   return (
-    <div className="app__header app__flex" id="home">
+    <div className="app__header" id="home">
       <div className="app__header-text-container">
         <motion.div
           whileInView={{ x: [-25, 0], opacity: [0, 1] }}
           transition={{ duration: 1 }}
-          className="app__header-name-info"
+          className="app__header-info-name"
           viewport={{ once: true }}
         >
-          <div className="app__header-name">
-            <div className="name-tag app_flex">
-              <p
-                className={`header-text ${theme === "dark" ? "dark-mode" : ""}`}
-              >
-                Hello, I'm <span className="bold-name-tag">William</span>
-              </p>
-            </div>
-          </div>
+          <p className={`header-text ${theme === "dark" ? "dark-mode" : ""}`}>
+            Hello, I'm <span className="bold-name-tag">William</span>
+          </p>
         </motion.div>
         <motion.div
           whileInView={{ x: [25, 0], opacity: [0, 1] }}
@@ -29,15 +23,9 @@ const Header = ({ theme }) => {
           className="app__header-info-dev"
           viewport={{ once: true }}
         >
-          <div className="app__header-dev">
-            <div className="dev-tag app__flex">
-              <p
-                className={`header-text ${theme === "dark" ? "dark-mode" : ""}`}
-              >
-                I'm a full stack web developer.
-              </p>
-            </div>
-          </div>
+          <p className={`header-text ${theme === "dark" ? "dark-mode" : ""}`}>
+            I'm a full stack web developer.
+          </p>
         </motion.div>
       </div>
       <motion.div
