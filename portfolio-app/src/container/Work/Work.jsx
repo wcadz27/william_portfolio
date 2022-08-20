@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import React from "react";
-import LazyLoad from "react-lazyload";
 import { AiOutlineGithub, AiFillEye } from "react-icons/ai";
 
 import "./Work.scss";
@@ -64,9 +63,9 @@ const Work = ({ theme }) => {
         {Projects.data.map((item, index) => (
           <div key={index} className={`${item.className} work-container`}>
             <div className="work-links-container">
-              <LazyLoad className="img-container">
+              <div className="img-container">
                 <img src={item.details[0].links[2].imgURL} alt={item.name} />
-              </LazyLoad>
+              </div>
               <motion.div
                 className="app__work-hover"
                 whileHover={{ opacity: [0, 1] }}
