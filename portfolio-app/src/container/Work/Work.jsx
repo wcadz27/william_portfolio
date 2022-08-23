@@ -14,8 +14,8 @@ const Projects = {
       details: [
         {
           links: [
-            { website: "hello.com" },
-            { github: "github.hello" },
+            { website: "https://movie-app-4fdd2.web.app" },
+            { github: "https://github.com/wcadz27/movie-app" },
             { imgURL: MovieAppImage },
           ],
         },
@@ -31,8 +31,8 @@ const Projects = {
       details: [
         {
           links: [
-            { website: "hello" },
-            { github: "hello" },
+            { website: "https://william-portfolio01.netlify.app/" },
+            { github: "https://github.com/wcadz27/william_portfolio" },
             { imgURL: PortfolioImage },
           ],
         },
