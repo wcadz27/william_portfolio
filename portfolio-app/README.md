@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# ![MovieTime](./README-assets/movie-app-image.png)
+# My Portfolio - A simple react portfolio app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A portfolio app made with SASS, ReactJS and ParticleJS as background. Here is where I showcase my recent completed projects. 
 
-## Available Scripts
+## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Preview](#preview)
+* [Setup](#setup)
+* [Room for Improvement](#room-for-improvement)
+* [Acknowledgements](#acknowledgements)
+* [Contact](#contact)
 
-In the project directory, you can run:
+## Demo
 
-### `npm start`
+Live demo [here](https://william-portfolio01.netlify.app)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## General Info
+This is my first every completed project which I'm really proud of. I wanted to make this as simple as it could with an amazing flow towards the end of the page. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Technologies Used
+ReactJS 18.1.0 - a front-end Javascript library used for building user interfaces for single-page applications
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+tsParticles - a Javscript library which allows user to create a highly customizable Javascript particle effects, confetti explosions, and fireworks animations which are mostly used as backgrounds.
 
-### `npm run build`
+SASS - an extension of CSS which gives you more power than CSS allows and to help user to clean code easily
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Feature
+-Who doesn't love dark mode nowadays? You can switch into dark mode by clicking on the switch on navigation bar on the far right
+-Background particle color switches two as you switch into dark mode!
+-Each section flows nicely with framer-motion transition effects
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Preview
+![screenshot 1](./README-assets/portfolio-image.png)
+![screenshot 2](./README-assets/shot-darkmode.png)
 
-### `npm run eject`
+## Setup
+Clone this repo to your pc and run npm install to install all dependencies to get started with the project
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Room for Improvement
+Areas that could be improved in future development
+-Styles 
+-More particle effects 
+-More cleaning in code
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Acknowledgements
+[This](https://github.com/bscottnz/portfolio-site) is where I got the idea of using tsParticles as background and I would like to thank him for it!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contact
+Feel free to contact me on my [LinkedIn](https://www.linkedin.com/in/william-cadiz-83b541195/) and ask me anything. I'm a growing developer and feedbacks are like my food to get stronger and better developer!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
