@@ -51,7 +51,7 @@ Areas that could be improved in future development
 [This](https://github.com/bscottnz/portfolio-site) is where I got the idea of using tsParticles as background and I would like to thank him for it!
 
 ## Contact
-Feel free to contact me on my [LinkedIn](https://www.linkedin.com/in/william-cadiz-83b541195/) and ask me anything. I'm a growing developer and feedbacks are like my food to get stronger and better developer!
+Feel free to contact me on my [LinkedIn](https://www.linkedin.com/in/william-cadiz/) and ask me anything. I'm a growing developer and feedbacks are like my food to get stronger and better developer!
 
 
 
