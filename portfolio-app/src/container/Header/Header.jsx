@@ -24,7 +24,7 @@ const Header = ({ theme }) => {
           viewport={{ once: true }}
         >
           <p className={`header-text ${theme === "dark" ? "dark-mode" : ""}`}>
-            I'm a full stack web developer.
+            I'm a front-end web developer.
           </p>
         </motion.div>
       </div>
